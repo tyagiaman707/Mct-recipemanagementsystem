@@ -24,4 +24,7 @@ public class Recipe {
     private String recipe_Instructions;
     @Column(name = "Comments")
     private String comment;
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private User user;
 }
